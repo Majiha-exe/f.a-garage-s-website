@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FA GARAGE | Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">FA GARAGE</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Services</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Reviews Section -->
+  <section class="reviews">
+    <h2>What Our Customers Say</h2>
+
+    <!-- Displayed Reviews -->
+    <div class="testimonial">
+      <p>"Excellent service and friendly staff. My car has never felt better!"</p>
+      <strong>- James K., Nairobi</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Fast oil change, good pricing, and they even cleaned my car for free!"</p>
+      <strong>- Sarah M., Thika</strong>
+    </div>
+
+    <!-- Submit Review -->
+    <h3>Leave a Review</h3>
+    <form class="review-form" onsubmit="return submitReview(event)">
+      <input type="text" id="reviewer-name" placeholder="Your Name" required />
+      <textarea id="review-message" rows="4" placeholder="Your review..." required></textarea>
+      <button class="btn" type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FA GARAGE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/254712345678?text=Hi%20FA%20GARAGE%2C%20I%20need%20help%20with%20my%20car!" 
+   class="whatsapp-float" target="_blank">
+  💬
+</a>
+</body>
+</html>

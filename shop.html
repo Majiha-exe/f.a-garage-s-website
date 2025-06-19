@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FA GARAGE | Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="FA GARAGE Logo" />
+      <span style="margin-left: 10px;">FA GARAGE</span>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Services</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="shop-section">
+    <h2>Book a Service</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Engine Diagnostics</h3>
+        <p>KES 2000</p>
+        <button class="btn" onclick="addToCart('Engine Diagnostics', 2000)">Add to Cart</button>
+      </div>
+      <div class="service-card">
+        <h3>Brake Repairs</h3>
+        <p>KES 3000</p>
+        <button class="btn" onclick="addToCart('Brake Repairs', 3000)">Add to Cart</button>
+      </div>
+      <div class="service-card">
+        <h3>Car Wash</h3>
+        <p>KES 500</p>
+        <button class="btn" onclick="addToCart('Car Wash', 500)">Add to Cart</button>
+      </div>
+      <div class="service-card">
+        <h3>Detailing</h3>
+        <p>KES 1500</p>
+        <button class="btn" onclick="addToCart('Detailing', 1500)">Add to Cart</button>
+      </div>
+      <div class="service-card">
+        <h3>Painting</h3>
+        <p>From KES 8000</p>
+        <button class="btn" onclick="addToCart('Painting', 8000)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FA GARAGE. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/254712345678" class="whatsapp-float" target="_blank">💬</a>
+  <script src="script.js"></script>
+</body>
+</html>

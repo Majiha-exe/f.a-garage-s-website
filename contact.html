@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FA GARAGE | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">FA GARAGE</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Services</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+
+    <div class="contact-wrapper">
+      <!-- Contact Form -->
+      <form class="contact-form" onsubmit="return sendContact(event)">
+        <input type="text" id="contact-name" placeholder="Your Name" required />
+        <input type="email" id="contact-email" placeholder="Your Email" required />
+        <textarea id="contact-message" rows="4" placeholder="Your Message..." required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Info + Map -->
+      <div class="contact-info">
+        <p><strong>Email:</strong> info@fagarage.co.ke</p>
+        <p><strong>Phone:</strong> +254 712 345 678</p>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8427977308656!2d36.69371587350053!3d-1.2670349356022952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f192dd5385247%3A0xbd31198238fe6424!2sF.A%20Garage!5e0!3m2!1sen!2ske!4v1750339512168!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FA GARAGE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/254712345678?text=Hi%20FA%20GARAGE%2C%20I%20need%20help%20with%20my%20car!" 
+   class="whatsapp-float" target="_blank">
+  💬
+</a>
+</body>
+</html>

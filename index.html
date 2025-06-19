@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FA Garage | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+  <img src="images/logo.png" alt="FA Garage Logo">
+  <h1 class="brand-name">F.A GARAGE.com</h1>
+  </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Welcome to FA Garage</h1>
+    <p>Your trusted car care and repair partner in Nairobi.</p>
+    <a href="services.html" class="btn">Explore Services</a>
+  </section>
+
+  <!-- SERVICES OVERVIEW (OPTIONAL) -->
+  <section class="container">
+    <h2 style="text-align:center;">Our Core Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="images/service1.jpg" alt="Car Wash">
+        <h3>Car Wash</h3>
+        <p>Interior and exterior cleaning with eco-friendly products.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service2.jpg" alt="Painting">
+        <h3>Body & Paint Work</h3>
+        <p>High-quality respraying and scratch repair.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service3.jpg" alt="Detailing">
+        <h3>Detailing</h3>
+        <p>Full engine, interior, and dashboard detailing.</p>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a href="services.html" class="btn">View All Services</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 FA Garage. All Rights Reserved.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
